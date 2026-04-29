@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Cards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">THÔNG TIN LIÊN HỆ</p>
+      <h1>Team Profile Cards</h1>
+    </header>
+
+    <section class="advisor-section">
+      <h2>Giảng viên hướng dẫn</h2>
+      <div id="advisorContainer" class="single-card"></div>
+    </section>
+
+    <section class="members-section">
+      <h2>Thành viên nhóm</h2>
+      <div id="memberContainer" class="card-grid"></div>
+    </section>
+  </main>
+
+  <template id="cardTemplate">
+    <article class="member-card" tabindex="0">
+      <div class="avatar-wrap">
+        <img class="avatar" alt="" loading="lazy" />
+      </div>
+      <div class="content">
+        <h3 class="name"></h3>
+        <p class="role"></p>
+        <ul class="meta">
+          <li><i class="fa-solid fa-cake-candles" aria-hidden="true"></i><strong class="dob"></strong></li>
+          <li><i class="fa-solid fa-phone" aria-hidden="true"></i><strong class="phone"></strong></li>
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><strong class="email"></strong></li>
+        </ul>
+      </div>
+    </article>
+  </template>
+
+  <script src="./script.js"></script>
+</body>
+</html>
